@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #919ab9;
+}
+
+body {
+  font-size: 1.1em;
+
+}
+
+span {
+  color: #084208;
+  font-weight: bold;
+}
+
+.pageItem {
+  border: 1px solid #c7c1c1;
+  border-radius: 5px;
+  padding: 2em 4em;
+}
