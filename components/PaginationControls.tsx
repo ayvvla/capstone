@@ -4,15 +4,13 @@ import ReactPaginate from "react-paginate";
 import {GrFormNextLink, GrFormPreviousLink} from 'react-icons/gr'
 import styles from "/styles/hospitals.module.css"
 
-const item = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
 export const Items = ({ currentItems }) => {
   return (
     <>
       {currentItems.map((hospital: any) => (
         <div key={hospital.id} className="pageItem">
           <h1>{hospital.name}</h1>
-          {hospital.address}
+          <p>{hospital.address}</p> 
         </div>
       ))}
     </>
@@ -39,12 +37,6 @@ const HospitalItem = ({ hospitals }) => {
   };
   return (
     <>
-      {/* {hospitals.map((hospital: any) => (
-        <div key={hospital.id} className="pageItem">
-          <h1>{hospital.name}</h1>
-          {hospital.address}
-        </div>
-      ))} */}
       <Items currentItems={currentItems} />
       <ReactPaginate
         activeClassName={`${styles.item} ${styles.active} `}

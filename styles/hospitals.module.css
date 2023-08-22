@@ -24,8 +24,9 @@
 .fixed {
   position: sticky;
 }
+
 .asideItem {
-  padding: .5em 1.5em;
+  padding: .1em 1.5em;
   color: #2a2a58;
   margin-top: 1em;
 }
